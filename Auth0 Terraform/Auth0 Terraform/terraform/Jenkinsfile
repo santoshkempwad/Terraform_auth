@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-                git branch: 'main', credentialsId: 'cde06f21-9ae7-4081-a549-f7bdb515dc6f', url: 'https://github.com/codepipe/tff.git'
+                git credentialsId: 'c69eff06-da4c-402a-aec4-a85bef1e5ab2', url: 'https://github.com/santoshkempwad
             }
         }
         stage ("terraform init") {
