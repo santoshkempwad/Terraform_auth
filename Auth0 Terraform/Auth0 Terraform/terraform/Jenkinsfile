@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-                git credentialsId: 'c69eff06-da4c-402a-aec4-a85bef1e5ab2', url: 'https://github.com/santoshkempwad
+                git credentialsId: 'github', url: 'https://github.com/santoshkempwad/Terraform_auth'
             }
         }
         stage ("terraform init") {
