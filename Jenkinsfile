@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-                git credentialsId: 'github', url: 'https://github.com/santoshkempwad/Terraform_auth'
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'test', url: 'https://github.com/santoshkempwad/Terraform_auth.git']]])
             }
         }
         stage ("terraform init") {
