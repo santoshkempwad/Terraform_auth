@@ -23,7 +23,7 @@ provider "auth0" {
 #   user_id         = "abc"
 #   connection_name = "Username-Password-Authentication"
 #   password        = "secret123@"
-#   email_verified  = false
+#   email_verified  = false 
   #   username="johndoe"
   # connection_name = auth0_connection.terraform-express-user-db.name
   #  user_id         = "12345"
